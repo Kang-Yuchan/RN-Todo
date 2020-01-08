@@ -24,7 +24,7 @@ export default class App extends React.Component {
 						returnKeyType={'done'}
 						autoCorrect={false}
 					/>
-					<ScrollView>
+					<ScrollView contentContainerStyle={styles.toDos}>
 						<ToDo />
 					</ScrollView>
 				</View>
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
 				shadowRadius: 5,
 				shadowOffset: {
 					height: -1,
-					width: 1
+					width: 0
 				}
 			},
 			android: {
@@ -77,5 +77,8 @@ const styles = StyleSheet.create({
 		borderBottomColor: '#bbb',
 		padding: 25,
 		borderBottomWidth: StyleSheet.hairlineWidth
+	},
+	toDos: {
+		alignItems: 'center'
 	}
 });
