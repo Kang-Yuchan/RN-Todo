@@ -24,8 +24,8 @@ export default class ToDo extends React.Component {
 						<TextInput
 							value={toDoValue}
 							style={[
-								styles.input,
 								styles.text,
+								styles.input,
 								isCompleted ? styles.completedText : styles.uncompletedText
 							]}
 							multiline={true}
@@ -138,6 +138,7 @@ const styles = StyleSheet.create({
 	},
 	input: {
 		width: width / 2,
-		marginVertical: 15
+		marginVertical: 15,
+		paddingBottom: 5
 	}
 });
